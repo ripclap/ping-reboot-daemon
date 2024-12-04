@@ -1,0 +1,6 @@
+[Unit]
+Description=Run my task every 20 minutes
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usrdata/root/ping-reboot.sh

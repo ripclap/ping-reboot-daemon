@@ -1,0 +1,10 @@
+[Unit]
+Description=Run my task every 20 minutes
+
+[Timer]
+OnBootSec=20min
+OnUnitActiveSec=30min
+Unit=ping-reboot.service
+
+[Install]
+WantedBy=timers.target

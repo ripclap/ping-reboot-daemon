@@ -1,0 +1,7 @@
+[Unit]
+Description=Trigger the ping-reboot timer at boot
+
+[Service]
+Type=oneshot
+ExecStart=/bin/systemctl start ping-reboot.timer
+RemainAfterExit=yes
